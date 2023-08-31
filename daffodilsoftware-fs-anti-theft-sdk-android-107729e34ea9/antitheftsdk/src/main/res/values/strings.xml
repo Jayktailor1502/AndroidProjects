@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">FsAntiTheft</string>
+
+
+    <!--Error Messages-->
+    <string name="network_error_msg">No Internet Connection</string>
+    <string name="retry">Retry</string>
+    <string name="technical_error_msg">Something went wrong</string>
+
+
+    <string name="otp_popup" >OTP Popup</string>
+    <string name="invalid_email_and_password">E-mail e/ou MSISDN incorretos.</string>
+
+
+    <string name="enter_email">Digite seu e-mail</string>
+
+    <string name="enter_mobile">99999-9999</string>
+    <string name="enter_cc">(99)</string>
+    <string name="register">Entrar</string>
+    <string name="submit">Validar</string>
+    <string name="need_help">Precisa de ajuda?</string>
+    <string name="resend">Reenviar em\u0020</string>
+    <string name="resend_otp">Reenviar</string>
+    <string name="email_send_for_verification">Envio de e-mail para verificação</string>
+    <string name="wrong_otp"><font fgcolor="#CD171E">Código inválido.</font></string>
+    <string name="verify">Validar</string>
+    <string name="no_location">Not able to fetch Location</string>
+    <string name="access_bg_location">Accessing Background Location</string>
+    <string name="access_bg_loc_message">We need to access your location to monitor it all the time for your safety purposes. So you\'ll have to select Allow all the time from Location permission to make this app work in background.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="already_exist">User Already Exist</string>
+    <string name="invalid_input">Invalid Input</string>
+    <string name="entre_no_mobile_otp">Entre no Mobile Otp</string>
+    <string name="digite_e_mail_otp">Digite E-mail Otp</string>
+    <string name="lock_message">You need to enter password to unlock your device</string>
+    <string name="okay">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_occurred">Some error occurred. Please try again.</string>
+    <string name="already_Exists">ALREADY_EXISTS</string>
+    <string name="device_id">DEVICE ID</string>
+    <string name="user_id">User Id</string>
+    <string name="authToken">authToken</string>
+    <string name="token">TOKEN</string>
+    <string name="token_Saved">Token saved</string>
+    <string name="is_device_registered">is device registered?</string>
+    <string name="fcmToken">Fetching FCM token failed</string>
+    <string name="camera_error">\"Camera Error : \"</string>
+    <string name="taking_picture">Taking picture</string>
+    <string name="camera_opened">Camera Opened</string>
+    <string name="camera_released">Camera released</string>
+    <string name="opening_camera">Opening Camera</string>
+    <string name="service">Service</string>
+    <string name="capture_picture_using_foreground_service">Capture picture using foreground service</string>
+    <string name="onPhotoCaptured">onphotocaputred</string>
+    <string name="image_Saved_at">\"Image saved at - \"</string>
+    <string name="inside_capture_thread">Inside captureThread run</string>
+    <string name="serviceDestroyed">Service Destroyed</string>
+    <string name="refreshedToken">\"Refreshed token: \"</string>
+    <string name="country_code">55</string>
+    <string name="onVerificationCompleted">onVerificationCompleted</string>
+    <string name="sendVerifyResponse">SendVerifyResponse</string>
+    <string name="verified">Verified</string>
+    <string name="user">USER</string>
+    <string name="created">CREATED</string>
+    <string name="invalid_otp">Invalid OTP</string>
+    <string name="otp">OTP</string>
+    <string name="null_otp">Null OTP</string>
+    <string name="email_not_verify">Email Not Verify</string>
+    <string name="auth_success">Auth Success</string>
+    <string name="already_logged">Already Logged In</string>
+    <string name="auth_failed">Auth Failed</string>
+    <string name="not_verified">Not Verified</string>
+    <string name="needs_verification">Needs Verification</string>
+    <string name="failed_to_upload_image">Failed to upload image</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="enter_application_id">Insira o código do aplicativo</string>
+    <string name="compliant">complaint</string>
+    <string name="not_compliant">not compliant</string>
+    <string name="device_admin_explanation">device admin explanation</string>
+    <string name="password_failed">password failed</string>
+    <string name="password_success">password success</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="permission">Permissões</string>
+    <string name="permission_condition" >Precisamos de algumas permissões para que as funcionalidades do Proteção PIX funcionem corretamente.</string>
+    <string name="check_permission" >ativar permissões</string>
+    <string name="return_permission">VOLTAR</string>
+    <string name="admin_permission_heading" >Função administrador</string>
+    <string name="admin_permission_content">Essa permissão habilita que seu celular seja bloqueado, ou apagado, remotamente</string>
+    <string name="background_location_heading">Localização em segundo plano</string>
+    <string name="background_location_content">Essa permissão habilita que seja possível visualizar remotamente a localização do seu celular</string>
+    <string name="display_overlay_heading">Sobreposição de app</string>
+    <string name="display_overlay_content">Essa permissão habilita que os comandos solicitados remotamente não sejam barrados pelo sistema do celular</string>
+    <string name="camera_heading">Camera</string>
+    <string name="camera_content">This permission enables you to remotely click the photos from your camera</string>
+
+    <string name="location_heading">Backgroud Location</string>
+    <string name="location_rational">This permission enables the possibility to remotely view the location of your device</string>
+    <string name="camera_rational">This permission enables that you capture photos remotely from your device\'s front camera</string>
+    <string name="admin_rational">This permission enables your device to be remotely locked or wiped </string>
+
+    <string name="admin_not_granted">Admin Permission not granted</string>
+    <string name="location_permission_txt">Location Permission</string>
+    <string name="camera_permission_txt">Camera Permission</string>
+    <string name="overlay_permission_txt">Overlay Permission</string>
+    <string name="admin_permission_txt">Admin Permission</string>
+    <string name="authentication_failed">Authentication Failed</string>
+    <string name="authentication_success">Authentication Succeed</string>
+    <string name="registration_failed">Registration failed</string>
+    <string name="wakelock_tag" translatable="false">sampleapp: mywakelocktag</string>
+    <string name="token_Success" translatable="false">Token success</string>
+    <string name="permission_is_true">Permission is true</string>
+    <string name="permission_notification_title">Proteção PIX não está ativo neste dispositivo</string>
+    <string name="permission_notification_text">Proteção PIX não está ativo neste dispositivo. Habilite sua permissão para ativar o serviço novamente.</string>
+
+    <string name="seguro_cont">Insira a senha para desbloquear\nseu dispositivo</string>
+    <string name="pin_heading">Inserir senha</string>
+    <string name="permission_summary" translatable="false">Enabling the accessibility service for App allows it to block all applications before they ́re opened when the device is marked as missing.</string>
+
+
+    <string name="wrong_pass">Senha incorreta</string>
+    <string name="wrong_pass_3x">Aguarde 10 minutos para tentar novamente</string>
+    <string name="wrong_pass_4x">Aguarde 30 minutos para tentar novamente</string>
+    <string name="wrong_pass_5x">Aguarde 60 minutos para tentar novamente</string>
+
+
+
+</resources>

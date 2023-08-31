@@ -1,0 +1,21 @@
+apply plugin: 'pmd'
+
+pmd {
+    toolVersion = "$pmdVersion"
+}
+
+task pmdReportGenerator(type: Pmd) {
+    ignoreFailures = true
+    ruleSetFiles = files("${project.rootDir}/tools/pmd/rules-pmd.xml")
+    source = fileTree("${project.projectDir}/src/main/java")
+
+    reports {
+        if (isJenkins) {
+            xml.enabled = true
+            html.enabled = false
+        } else {
+            xml.enabled = false
+            html.enabled = true
+        }
+    }
+}

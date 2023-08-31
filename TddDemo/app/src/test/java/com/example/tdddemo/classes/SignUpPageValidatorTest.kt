@@ -32,9 +32,22 @@ class SignUpPageValidatorTest {
     }
 
     @Test
+    fun isEmptyCheck_emptyLastName_returnFalse() {
+        val result = SUT.isLastNameEmpty("Sharma")
+        Assert.assertFalse(result)
+    }
+
+
+    @Test
     fun isStringCheck_firstNameContainDigitsOrSpecialCharacters_returnTrue() {
         val result = SUT.isFirstNameContainDigitsOrSpecialCharacters("Mohit@1")
         Assert.assertTrue(result)
+    }
+
+    @Test
+    fun isStringCheck_firstNameContainDigitsOrSpecialCharacters_returnFalse() {
+        val result = SUT.isFirstNameContainDigitsOrSpecialCharacters("Mohit")
+        Assert.assertFalse(result)
     }
 
     @Test
@@ -44,15 +57,33 @@ class SignUpPageValidatorTest {
     }
 
     @Test
+    fun isStringCheck_lastNameContainDigitsOrSpecialCharacters_returnFalse() {
+        val result = SUT.isLastNameContainDigitsOrSpecialCharacters("Jain")
+        Assert.assertFalse(result)
+    }
+
+    @Test
     fun isAgeCheck_emptyAgeOrContainsAlphabets_returnTrue() {
         val result = SUT.isAgeEmptyOrContainsAlphabets("asd12")
         Assert.assertTrue(result)
     }
 
     @Test
+    fun isAgeCheck_emptyAgeOrContainsAlphabets_returnFalse() {
+        val result = SUT.isAgeEmptyOrContainsAlphabets("12")
+        Assert.assertFalse(result)
+    }
+
+    @Test
     fun isEmailCheck_emailValidationVerified_returnTrue() {
         val result = SUT.isEmailValidated("abc++1@gmail.com")
         Assert.assertTrue(result)
+    }
+
+    @Test
+    fun isEmailCheck_emailValidationVerified_returnFalse() {
+        val result = SUT.isEmailValidated("abc+@+1@gmail.com")
+        Assert.assertFalse(result)
     }
 
     @Test
@@ -69,8 +100,15 @@ class SignUpPageValidatorTest {
 
     @Test
     fun isPasswordMatch_passwordMatchesConfirmPassword_returnTrue() {
+        // password - Password123@
         val result = SUT.isPasswordMatchesConfirmPassword("Password123@")
         Assert.assertTrue(result)
     }
 
+    @Test
+    fun isPasswordMatch_passwordMatchesConfirmPassword_returnFalse() {
+        // password - Password123@
+        val result = SUT.isPasswordMatchesConfirmPassword("Password123")
+        Assert.assertFalse(result)
+    }
 }
